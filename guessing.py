@@ -2,7 +2,22 @@ import random
 
 
 def guessing_game(low=1, high=100, tries=5):
-    """Play a number guessing game with limited tries and a replay option."""
+    """
+    Andrew Hsia
+    Play a guessing game using a randomly generated number.
+
+    Give the player hints if their guess is too high or too low.
+    End each round when they guess correctly or run out of tries,
+    then ask whether they want to play again.
+
+    Args:
+        low (int): Smallest possible number. Defaults to 1.
+        high (int): Largest possible number. Defaults to 100.
+        tries (int): Number of guesses per round. Defaults to 5.
+
+    Returns:
+        None.
+    """
     play_again = "Y"
 
     while play_again == "Y":
